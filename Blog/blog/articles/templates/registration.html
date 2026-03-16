@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Django Public Blog - регистрация</title>
+    <link rel="stylesheet" href="{% static 'css/article.css' %}">
+</head>
+<body class="registration">
+<div class="content">
+    <h1>Регистрация</h1>
+    <a class="back-link" href="{% url 'archive' %}">
+        На главную
+    </a>
+    <form method="POST">
+        {% csrf_token %}
+        <label>
+            <input type="text"
+                   name="username"
+                   placeholder="Имя пользователя"
+                   value="{{ form.username }}">
+        </label>
+        <label>
+            <input type="password"
+                   name="password1"
+                   placeholder="Пароль">
+        </label>
+        <label>
+            <input type="password"
+                   name="password2"
+                   placeholder="Повторите пароль">
+        </label>
+        <input type="submit" value="Зарегистрироваться">
+    </form>
+    {{ form.errors }}
+</div>
+</body>
+</html>

@@ -1,0 +1,213 @@
+body {
+    font-family: Tahoma, Arial, sans-serif;
+    color: #ffffff;
+    background: #20c0a5;
+}
+
+.header {
+    background: #bce2dc;
+    width: 960px;
+}
+
+.logo {
+    position: relative;
+    top: 10px;
+    display: flex;
+    width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.service-title {
+    color: #005d4b;
+    font-weight: bold;
+    font-size: 50px;
+    margin-bottom: 140px;
+}
+
+.header-text-area {
+    float: left;
+    width: 55%;
+    margin-left: 40px;
+}
+
+.header-text-area a {
+    justify-content: space-between;
+    color: #20c0a5;
+    font-size: 35px;
+    text-align: justify;
+}
+
+.header-text-parallax-area {
+    overflow: hidden;
+}
+
+.register-link {
+    display: flex;
+    justify-content: space-between;
+    color: #20c0a5;
+}
+
+.archive {
+    background: #4da899;
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #005d4b;
+}
+
+.post-title a {
+    color: #005d4b;
+}
+
+.article-author {
+    width: 50%;
+    float: left;
+}
+
+.article-created-date {
+    text-align: right;
+}
+
+.article-header {
+    display: flex;
+    justify-content: space-between;
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.article-header img {
+    width: 318px;
+}
+
+.article-header-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.article-header a {
+    color: #ffffff;
+    margin-top: 15px;
+}
+
+.header {
+    position: relative;
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.archive-header-links a {
+    position: absolute;
+    top: 15px;
+    right: 0;
+    color: #ffffff;
+}
+
+.content {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content h1 {
+    text-align: center;
+}
+
+.content input[type="text"],
+.content input[type="password"] {
+    width: 100%;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.content textarea {
+    width: 100%;
+    height: 200px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.content input[type="submit"] {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background: #ffffff;
+}
+
+.back-link {
+    display: block;
+    text-align: left;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.fold-button {
+    float: right;
+    font-size: 15px;
+    text-decoration-line: underline;
+}
+
+.one-post.folded .article-author {
+    display: none;
+}
+
+.one-post.folded .article-created-date {
+    display: none;
+}
+
+.one-post.folded .article-text {
+    display: none;
+}
+
+.one-post {
+    position: relative;
+    padding: 15px;
+    z-index: 0;
+}
+
+.one-post-shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: black;
+    opacity: 0;
+    z-index: -1; /* это свойство «отодвигает» элемент на задний план */
+}
+
+.icons-for-parallax {
+    float: right;
+    height: 530px;
+    width: 35%;
+    position: relative;
+}
+
+.icons-for-parallax img {
+    /* здесь находятся общие для всех картинок стили */
+    position: absolute;
+    top: 0;
+}
+
+.icon-for-parallax-first {
+    width: 200px;
+    margin-top: 200px;
+    z-index: 3;
+    /* эта картинка на переднем плане, у неё больший z-index */
+}
+
+.icon-for-parallax-second {
+    width: 175px; /* уменьшить ширину для картинки, чтобы визуально */
+    /* находилась дальше для пользователя */
+    margin-top: 100px; /* эта картинка слегка смещена вправо и вниз */
+    margin-left: 80px; /* за счет левой и верхней границ */
+    z-index: 2;
+}
+
+.icon-for-parallax-third {
+    width: 150px;
+    margin-left: 160px;
+    z-index: 1; /* эта картинка на заднем плане, у неё меньший z-index */
+}

@@ -1,0 +1,25 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/article.css' %}">
+<body class="article">
+<div class="article-header">
+    <img src="{% static 'img/dpb-logo.png' %}" alt="лого"/>
+    <div class="article-header-links">
+        <a class="registration" href="{% url 'registration' %}">
+            Регистрация
+        </a>
+        <a href="{% url 'archive' %}">
+            Все статьи
+        </a>
+    </div>
+</div>
+<div class="archive">
+    <div class="one-post">
+        <h2 class="post-title">{{ post.title }}</h2>
+        <div class="article-info">
+            <div class="article-author">{{ post.author.username }}</div>
+            <div class="article-created-date">{{ post.created_date }}</div>
+        </div>
+        <p class="article-text">{{ post.text }}</p>
+    </div>
+</div>
+</body>
